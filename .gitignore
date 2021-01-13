@@ -2,3 +2,13 @@
 *.iml
 .tags
 .tags1
+
+node_modules/
+
+/android/.gradle/
+/android/.idea/
+/android/build/
+/android/bin/
+/android/gen/
+/android/out/
+/android/local.properties

@@ -1,4 +1,4 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="chat.rocket">
+    package="chat.rocket.rnshareextension">
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

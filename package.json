@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/RocketChat/rn-extensions-share"
   },
-  "homepage": "https://github.com/RocketChat/rn-extensions-share"
+  "homepage": "https://github.com/RocketChat/rn-extensions-share",
+  "dependencies": {
+    "react-native": "^0.63.1"
+  }
 }

@@ -392,21 +392,27 @@ AppRegistry.registerComponent('MyShareEx', () => Share) // TODO: Replace MyShare
 
 So the `app.ios` and `app.android.js` refers to main app and `share.ios.js` and `share.android.js` refers to share extension.
 
-# Share Extension APIs
+# Share Extension API
 
-- `data()` is a function that returns a promise. Once the promise is resolved, you get two values, `type` and `value`.
+- `data()` is a function that returns a promise. Once the promise is resolved, you get an array containing one or more of the following object:
 
+```js
+{
+  value: string
+  type: 'media' | 'text'
+}
+```
+
+Example call:
 
 ```js
 import ShareExtension from 'rn-extensions-share'
 ...
 
-const { type, value } = await ShareExtension.data(); // type = 'media' | 'text'
+const { type, value } = await ShareExtension.data()
 ```
 
-- `close()`
-
-Simply closes the share extension and returns the touch event back to application that triggered the share.
+- `close()` simply closes the share extension and returns the touch event back to application that triggered the share.
 
 # On iOS: Re-harvesting a shared image
 
